@@ -1,0 +1,35 @@
+@mixin vertial-gradient-2($color1, $color2) {
+    background-image: -webkit-linear-gradient($color1, $color2);
+    background-image: -moz-linear-gradient($color1, $color2);
+    background-image: linear-gradient($color1, $color2);
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        height: 0;
+        line-height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+@mixin box($color, $bg-color, $border-height) {
+    border: $border-height solid $color;
+    border-radius: 4px;
+    background-color: $bg-color;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+@mixin after-fontawesome($fontawesomecode) {
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "#{$fontawesomecode}";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+    }
+}
