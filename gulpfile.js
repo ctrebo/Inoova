@@ -27,19 +27,7 @@ function stylecss() {
     .pipe(browserSync.stream());
 }
 
-//watch scss and show changes in the browser
-function watch() {
-    browserSync.init({
-        server: {
-            baseDir: "./",
-            index: "/index.html"
-        }
-    });
-    gulp.watch('src/scss/**/*.scss', style)
-    gulp.watch('public/css/styles.css', stylecss);
-    gulp.watch('./*.html').on('change',browserSync.reload);
-    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
-}
+
 
 //moves modules to the /vendor/ folder
 function movefiles() {
@@ -55,7 +43,24 @@ function movefiles() {
     return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts)
 }
 
+//watch scss and show changes in the browser
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: "./",
+            index: "/index.html"
+        }
+    });
+    gulp.watch('src/scss/**/*.scss', style)
+    gulp.watch('public/css/styles.css', stylecss);
+    gulp.watch("", movefiles)
+    gulp.watch('./*.html').on('change',browserSync.reload);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+    
+}
+
+
 exports.style = style;
 exports.watch = watch;
-exports.movefiles = movefiles
+exports.movefiles = movefiles;
 exports.stylecss = stylecss;
