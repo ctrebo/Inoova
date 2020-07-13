@@ -44,3 +44,8 @@
         font-weight: 900;
     }
 }
+
+@mixin filter($filterfunktion, $parameter) {
+    -webkit-filter: $filterfunktion($parameter);
+    filter: $filterfunktion($parameter);
+}

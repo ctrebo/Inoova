@@ -1,18 +1,26 @@
 
-.whatwedo {
+.section {
     text-align: justify;
     margin:0 auto;
     width: 50%;
 }
 
-.projects {
+.projects, .clients {
     margin: auto;
     
+}
+
+.team {
+    width: 100vw;
+    height: 40vh;
+    background-color: gray;
 }
 
 .image-holder {
     display: inline;
 }
+
+
 
 // .greater-smaller-then {
 //     position: absolute;
@@ -27,3 +35,11 @@
     color: #fff;
 }
 
+#smaller2 {
+    color: #fff;
+}
+
+
+#greater2 {
+    color: #000;
+}
