@@ -1,0 +1,14 @@
+.page-header {
+    height: 100vh;
+    display: flex;
+
+    background: -webkit-linear-gradient(0deg, #FF4160,  #525DFA 140%);
+    background: -moz-linear-gradient(0deg, #FF4160, #525DFA 140%);
+    background: linear-gradient(90deg, #FF4160,  #525DFA 140%);
+}
+
+.heading-group {
+    color: white;
+    text-align: center;
+    margin: auto;
+}

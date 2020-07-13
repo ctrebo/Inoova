@@ -1,7 +1,7 @@
-@mixin vertial-gradient-2($color1, $color2) {
-    background-image: -webkit-linear-gradient($color1, $color2);
-    background-image: -moz-linear-gradient($color1, $color2);
-    background-image: linear-gradient($color1, $color2);
+@mixin gradient($var, $var1, $percentage) {
+    background: -webkit-linear-gradient(0deg, $var,  $var1, $percentage);
+    background: -moz-linear-gradient(0deg, $var, $var1, $percentage);
+    background: linear-gradient(90deg, $var,  $var1, $percentage);
 }
 
 @mixin clearfix {

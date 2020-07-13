@@ -1,0 +1,27 @@
+.logo {
+    width: 101.15px;
+    height: auto;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url('../../img/HamburgerMenu.svg');
+    padding-left: 10rem;
+}
+
+.navbar {
+    //background: transparent;
+    //position: absolute;
+    width: 100vw;
+
+    background: -webkit-linear-gradient(0deg, #FF4160,  #525DFA 140%);
+    background: -moz-linear-gradient(0deg, #FF4160, #525DFA 140%);
+    background: linear-gradient(90deg, #FF4160,  #525DFA 140%);
+    opacity: 94%;
+
+    
+}
+
+.navbarToggler {
+    left: 100%;
+    width: 35.625%;
+}
