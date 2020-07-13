@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    Hallo Welt
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,8 +13,6 @@
 
     <!-- css stylesheet -->
     <link rel="stylesheet" href="public/css/styles.min.css">
-
-
 </head>
 
 <body>
@@ -58,6 +55,7 @@
         </hgroup>
     </header>
 
+    <!-- main part -->
     <main>
         <div class = "container pt-5">
             <section class = "whatwedo col-12">
@@ -67,15 +65,21 @@
                 </hgroup>
                 <p>Stelle Dich zusammen mit uns den Herausforderungen in Zeiten des rasanten Wachstums. Wir lieben das Programmieren, Beraten, Experimentieren, Planen und wir vermeiden den „Dienstleister/Kunden“ Ansatz. Deshalb möchten wir gemeinsam mit Dir der Zeit einen Schritt voraus sein und etwas Einzigartiges schaffen.</p>
             </section>
+
+            <!-- 'unsere Projekte' teil -->
             <section class = "whatwedo mt-5 col-12">
                 <h4>UNSERE PROJEKTE</h4>
                 <p>Unsere Kunden und Partner kommen oft mit brillanten Ideen zu uns, bei deren Umsetzung wir Sie gerunterstützen.   </p>
             </section>
             <div class = "row">
                 <section class = "projects">
-                    <article class = "col justify-content-center">
-                        <a href = "#"><img src = "" alt = "Eines unserer Projeke" /></a>
+                    <!-- kleiner Zeichen zum weiterklicken -->
+                    <i class="fa fa-chevron-left fa-2x greater-smaller-then" id = "smaller1" aria-hidden="true"></i>
+                    <article class = "col justify-content-center image-holder">
+                        <a href = "#"><img src = "/img/project-1.png" alt = "Eines unserer Projeke" /></a>
                     </article>
+                    <!-- größer Zeichen zum weiterklicken -->
+                    <i class="fa fa-chevron-right fa-2x greater-smaller-then" id = "greater1" aria-hidden="true"></i>
                 </section>
             </div>
         </div>
@@ -85,6 +89,5 @@
 
     <!-- Bootstrap js -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
