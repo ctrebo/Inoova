@@ -1,4 +1,4 @@
-@mixin gradient($var, $var1, $percentage) {
+@mixin linear-gradient($var, $var1, $percentage) {
     background: -webkit-linear-gradient(0deg, $var,  $var1, $percentage);
     background: -moz-linear-gradient(0deg, $var, $var1, $percentage);
     background: linear-gradient(90deg, $var,  $var1, $percentage);
