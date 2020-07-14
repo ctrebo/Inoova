@@ -1,8 +1,12 @@
 
 .section {
-    text-align: justify;
     margin:0 auto;
-    width: 50%;
+    width: 60%;
+    word-spacing:-1.5px;
+}
+
+.whatwedo {
+    text-align: center;
 }
 
 .projects, .clients {
@@ -12,9 +16,12 @@
 
 .team {
     width: 100vw;
-    height: 40vh;
-    background-color: gray;
+    height: 50vh;
+    background-color: #0000004D;
+    position: relative;
 }
+
+
 
 .image-holder {
     display: inline;
@@ -43,3 +50,4 @@
 #greater2 {
     color: #000;
 }
+
