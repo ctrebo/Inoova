@@ -1,13 +1,21 @@
+// Inoova logo
 .logo {
     width: 7rem;
     height: auto;
 }
 
+// Changing Burger Icon
 .navbar .navbar-toggler-icon {
-    background-image: url('../../img/HamburgerMenu.svg');
     padding-left: 10rem;
+    position: relative;
+    z-index: 100;
+    background-image: url('../../img/HamburgerMenu.svg');
 }
 
+
+
+
+//Navbar overoll design
 .navbar {
     //background: transparent;
     //position: absolute;
@@ -24,8 +32,32 @@
     //filter: brightness(120%);
 }
 
-.navbarToggler {
-    left: 100%;
-    width: 35.625%;
+
+//Navbar menu design
+.menu {
+    background-color: black;
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 75%;
+    border-radius: 50px;
+    z-index: -1;
 }
 
+
+// Navbar menu unordered list design
+ul {
+    list-style: none;
+
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}

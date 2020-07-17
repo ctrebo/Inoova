@@ -13,54 +13,58 @@
 
     <!-- css stylesheet -->
     <link rel="stylesheet" href="public/css/styles.min.css">
+
+
 </head>
 
 <body>
     <!--Navbar setting padding-->
     <nav class="navbar fixed-top">
         <a class="navbar-brand ml-5" href="#">
-            <img class = "logo" src = "img/inoova-logo-white.png">
+            <img class = "logo" src = "img/inoova-logo-white.png" alt = "logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" onclick = "menu()" id = "btn">
             <span class="navbar-toggler-icon"></span>
         </button>
         
         <!-- collapse content -->
-        <div class = "navbar-collapse collapse" id = "navbarToggler">
-            <div class = "menu-inoova-page">
-                <ul class = "navbar-content">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>    
-                </ul>
-            </div>
+        <div class = "navbar-collapse collapse menu" id = "navbarToggler">
+            <ul class = "navbar-content">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>    
+            </ul>
         </div>
     </nav>
     
     <!-- header -->
-    <header class = "page-header px-5">
+    <header class = "page-header px-5" id = "header">
         <!-- mask for animation-->
-
+        <div>
+        <svg xmlns="http://www.w3.org/2000/svg" id = "svg" viewBox="0 0 461.76 460.46"><defs><style>.cls-1{fill:#fff;opacity:0.6;}</style></defs><g id="Ebene_6" data-name="Ebene 6"><circle id="Ellipse_55" data-name="Ellipse 55" class="cls-1" cx="204.72" cy="230.23" r="204.72"/></g><g id="Ebene_5" data-name="Ebene 5"><circle id="Ellipse_55-2" data-name="Ellipse 55" class="cls-1" cx="228.19" cy="204.72" r="204.72"/></g><g id="Ebene_4" data-name="Ebene 4"><circle id="Ellipse_55-3" data-name="Ellipse 55" class="cls-1" cx="228.66" cy="255.73" r="204.72"/></g><g id="Ebene_3" data-name="Ebene 3"><circle id="Ellipse_55-4" data-name="Ellipse 55" class="cls-1" cx="257.04" cy="230.16" r="204.72"/></g></svg>
+        <div>
         <!-- group of headings -->
-        <hgroup class = "heading-group">
+        <hgroup class = "heading-group">        
             <h1>Gemeinsam</h1>
             <h3>Machen Wir den</h3>
             <h3>Unterschied</h3>
         </hgroup>
     </header>
+        
+    
 
     <!-- main part -->
     <main>
         <div class = "container pt-5">
             <section class = "section col-12">
                 <hgroup>
-                    <h4 id = "whatwedo">WAS MACHEN WIR?</h4>
+                    <h4>WAS MACHEN WIR?</h4>
                     <h5>Wir setzen auf Partnerschaften, Zusammenarbeiten und auf das Miteinander</h5>
                 </hgroup>
                 <p>Stelle Dich zusammen mit uns den Herausforderungen in Zeiten des rasanten Wachstums. Wir lieben das Programmieren, Beraten, Experimentieren, Planen und wir vermeiden den „Dienstleister/Kunden“ Ansatz. Deshalb möchten wir gemeinsam mit Dir der Zeit einen Schritt voraus sein und etwas Einzigartiges schaffen.</p>
@@ -122,6 +126,11 @@
 
 
     <!-- Bootstrap js -->
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- own js -->
+    
+
 </body>
 </html>
