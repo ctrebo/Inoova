@@ -1,62 +1,58 @@
-#svg {
+#svg1 {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 800px;
     top: 20%;
     left:20%;
 }
 
+
 @keyframes leftandin {
+
     0% { transform: translate(0%); }
-    25% { transform: translate(-8%); }
-    50% { transform: translate(-16%); }
-    75% { transform: translate(-24%); }
-    100% { transform: translate(-32%); }
+    25% { transform: translate(-2.5%); }
+    50% { transform: translate(-5%); }
+    75% { transform: translate(-7.5%); }
+    100% { transform: translate(-10%); }
 }
 
 @keyframes rightandin {
     0% { transform: translate(0%); }
-    25% { transform: translate(8%); }
-    50% { transform: translate(16%); }
-    75% { transform: translate(24%); }
-    100% { transform: translate(32%); }
-}
-
-@keyframes topandin {
-    0% { transform: translate(0%, 0%); }
-    25% { transform: translate(0%, 8%); }
-    50% { transform: translate(0%, 16%); }
-    75% { transform: translate(0%, 24%); }
-    100% { transform: translate(0%, 32%); }
+    25% { transform: translate(2.5%); }
+    50% { transform: translate(5%); }
+    75% { transform: translate(7.5%); }
+    100% { transform: translate(10%); }
 }
 
 @keyframes bottomandin {
-    0% { transform: translate(0%, 0%); }
-    25% { transform: translate(0%, -8%); }
-    50% { transform: translate(0%, -16%); }
-    75% { transform: translate(0%, -24%); }
-    100% { transform: translate(0%, -32%); }
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, -2.5%); }
+    50% { transform: translate(0%, -5%); }
+    75% { transform: translate(0%, -7.5%); }
+    100% { transform: translate(0%, -10%); }
 }
 
-
-
+@keyframes topandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, 2.5%); }
+    50% { transform: translate(0%, 5%); }
+    75% { transform: translate(0%, 7.5%); }
+    100% { transform: translate(0%, 10%); }
+}
 
 
 #Ellipse_55 {
-    animation: leftandin 0.5s linear infinite alternate;
+    animation: leftandin 0.8s linear infinite alternate;
 }
 
 #Ellipse_55-2 {
-    animation:  bottomandin 0.5s linear infinite alternate;
+    animation:  bottomandin 0.8s linear infinite alternate;
 }
 
 #Ellipse_55-3{
-    animation: topandin 0.5s linear infinite alternate;
+    animation: topandin 0.8s linear infinite alternate;
 }
 
 #Ellipse_55-4 {
-    animation: rightandin 0.5s linear infinite alternate;
+    animation: rightandin 0.8s linear infinite alternate;
 }
-
-
-
