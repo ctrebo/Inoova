@@ -1,58 +1,108 @@
-#svg1 {
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    top: 20%;
-    left:20%;
-}
+// #svg1 {
+//     position: absolute;
+//     width: 800px;
+//     height: 800px;
+//     top: 20%;
+//     left:20%;
+// }
+
+// ///////////////////////////////////////////////
+// //Keyframe leftandin
+
+// @-webkit-keyframes leftandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(-2.5%); }
+//     50% { transform: translate(-5%); }
+//     75% { transform: translate(-7.5%); }
+//     100% { transform: translate(-10%); }
+// }
+
+// @keyframes leftandin {
+
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(-2.5%); }
+//     50% { transform: translate(-5%); }
+//     75% { transform: translate(-7.5%); }
+//     100% { transform: translate(-10%); }
+// }
+
+// ////////////////////////////////
+// //Keyframe rightandin
+
+// @-webkit-keyframes rightandin{
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(2.5%); }
+//     50% { transform: translate(5%); }
+//     75% { transform: translate(7.5%); }
+//     100% { transform: translate(10%); }
+// }
 
 
-@keyframes leftandin {
+// @keyframes rightandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(2.5%); }
+//     50% { transform: translate(5%); }
+//     75% { transform: translate(7.5%); }
+//     100% { transform: translate(10%); }
+// }
 
-    0% { transform: translate(0%); }
-    25% { transform: translate(-2.5%); }
-    50% { transform: translate(-5%); }
-    75% { transform: translate(-7.5%); }
-    100% { transform: translate(-10%); }
-}
+// //////////////////////////////////////////////////////////////
+// //Keyframe bottomandin
 
-@keyframes rightandin {
-    0% { transform: translate(0%); }
-    25% { transform: translate(2.5%); }
-    50% { transform: translate(5%); }
-    75% { transform: translate(7.5%); }
-    100% { transform: translate(10%); }
-}
+// @-webkit-keyframes bottomandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(0%, -2.5%); }
+//     50% { transform: translate(0%, -5%); }
+//     75% { transform: translate(0%, -7.5%); }
+//     100% { transform: translate(0%, -10%); }
+// }
 
-@keyframes bottomandin {
-    0% { transform: translate(0%); }
-    25% { transform: translate(0%, -2.5%); }
-    50% { transform: translate(0%, -5%); }
-    75% { transform: translate(0%, -7.5%); }
-    100% { transform: translate(0%, -10%); }
-}
+// @keyframes bottomandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(0%, -2.5%); }
+//     50% { transform: translate(0%, -5%); }
+//     75% { transform: translate(0%, -7.5%); }
+//     100% { transform: translate(0%, -10%); }
+// }
 
-@keyframes topandin {
-    0% { transform: translate(0%); }
-    25% { transform: translate(0%, 2.5%); }
-    50% { transform: translate(0%, 5%); }
-    75% { transform: translate(0%, 7.5%); }
-    100% { transform: translate(0%, 10%); }
-}
+// /////////////////////////////////////////////////////////////////
+// //Keyframe topandin
+
+// @-webkit-keyframes topandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(0%, 2.5%); }
+//     50% { transform: translate(0%, 5%); }
+//     75% { transform: translate(0%, 7.5%); }
+//     100% { transform: translate(0%, 10%); }
+// }
+
+// @keyframes topandin {
+//     0% { transform: translate(0%); }
+//     25% { transform: translate(0%, 2.5%); }
+//     50% { transform: translate(0%, 5%); }
+//     75% { transform: translate(0%, 7.5%); }
+//     100% { transform: translate(0%, 10%); }
+// }
 
 
-#Ellipse_55 {
-    animation: leftandin 0.8s linear infinite alternate;
-}
+// #Ellipse_55 {
+//     -webkit-animation: leftandin 0.8s linear infinite alternate;
+//     animation: leftandin 0.8s linear infinite alternate;
+// }
 
-#Ellipse_55-2 {
-    animation:  bottomandin 0.8s linear infinite alternate;
-}
+// #Ellipse_55-2 {
 
-#Ellipse_55-3{
-    animation: topandin 0.8s linear infinite alternate;
-}
+//     -webkit-animation:  bottomandin 0.8s linear infinite alternate;
+//     animation:  bottomandin 0.8s linear infinite alternate;
+// }
 
-#Ellipse_55-4 {
-    animation: rightandin 0.8s linear infinite alternate;
-}
+// #Ellipse_55-3{
+//     -webkit-animation: topandin 0.8s linear infinite alternate;
+//     animation: topandin 0.8s linear infinite alternate;
+// }
+
+// #Ellipse_55-4 {
+
+//     -webkit-animation: rightandin 0.8s linear infinite alternate;
+//     animation: rightandin 0.8s linear infinite alternate;
+// }

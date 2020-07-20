@@ -1,0 +1,148 @@
+//Basis style for the whole svg
+#svg2 {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    top: 0%;
+    left:30%;
+    border: none;
+}
+
+//Style for the whole "Ebene" with all the circles and the logo
+#Ebene_1-2 {
+    transform-origin: center;
+    animation: rotate 0.75s linear; 
+    animation-fill-mode: forwards;
+}
+
+//Keyframes
+///////////////////////////////////////////////////////
+
+//Rotate the whole svg <g id = "Ebene_1-2">
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(62deg);
+
+    } 
+}
+
+//Keyframes that translate the circles + change their opacity
+//For every circle their is one Keyframe due to different direction
+@keyframes topright {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    75%{
+        transform: translate(3.5%, -3.5%);
+        opacity: 0.2;
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(0%, -15%);
+        opacity:0;
+    }
+}
+
+@keyframes topleft {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    75%{
+        transform: translate(-3.5%, -3.5%);
+        opacity: 0.2;
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(-15%, 0%);
+        opacity:0;
+    }
+}
+
+@keyframes bottomright {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    75%{
+        transform: translate(3.5%, 3.5%);
+        opacity: 0.2;
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(15%, 0%);
+        opacity:0;
+        
+    }
+}
+
+@keyframes bottomleft {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    75%{
+        transform: translate(-3.5%, 3.5%);
+        opacity: 0.2;
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translate(0%,15%);
+        opacity: 0;
+    }
+}
+
+//Keyframe that changes the opacity of the logo
+//from 0 to 1 when the circles are in the middle
+@keyframes opacityforlogo {
+    0% {
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//SCSS Code of circles and logo
+// Circles are holding Keyframes for animation 
+//////////////////////////////////////////////////////
+
+#Gruppe_411 {
+    transform: rotate(-62deg);
+    transform-origin: center;
+    animation: opacityforlogo 1s linear;
+    animation-fill-mode: forwards;
+}
+
+#Ellipse_55 {
+    animation: bottomright 1.0s linear;
+    animation-fill-mode: forwards;
+}
+
+#Ellipse_55-2 {
+    animation: bottomleft 1.0s linear;
+    animation-fill-mode: forwards;
+}
+
+#Ellipse_55-3 {
+    animation: topright 1.0s linear;
+    animation-fill-mode: forwards;
+}
+
+#Ellipse_55-4 {
+    animation: topleft 1.0s linear;
+    animation-fill-mode: forwards;
+
+}
