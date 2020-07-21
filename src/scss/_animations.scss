@@ -1,108 +1,114 @@
-// #svg1 {
-//     position: absolute;
-//     width: 800px;
-//     height: 800px;
-//     top: 20%;
-//     left:20%;
-// }
+#svg1 {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    left:5%;
+    z-index: 10001;
 
-// ///////////////////////////////////////////////
-// //Keyframe leftandin
+}
 
-// @-webkit-keyframes leftandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(-2.5%); }
-//     50% { transform: translate(-5%); }
-//     75% { transform: translate(-7.5%); }
-//     100% { transform: translate(-10%); }
-// }
+///////////////////////////////////////////////
+//Keyframe leftandin
 
-// @keyframes leftandin {
+@-webkit-keyframes leftandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(-2.5%); }
+    50% { transform: translate(-5%); }
+    75% { transform: translate(-7.5%); }
+    100% { transform: translate(-10%); }
+}
 
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(-2.5%); }
-//     50% { transform: translate(-5%); }
-//     75% { transform: translate(-7.5%); }
-//     100% { transform: translate(-10%); }
-// }
+@keyframes leftandin {
 
-// ////////////////////////////////
-// //Keyframe rightandin
+    0% { transform: translate(0%); }
+    25% { transform: translate(-2.5%); }
+    50% { transform: translate(-5%); }
+    75% { transform: translate(-7.5%); }
+    100% { transform: translate(-10%); }
+}
 
-// @-webkit-keyframes rightandin{
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(2.5%); }
-//     50% { transform: translate(5%); }
-//     75% { transform: translate(7.5%); }
-//     100% { transform: translate(10%); }
-// }
+////////////////////////////////
+//Keyframe rightandin
 
-
-// @keyframes rightandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(2.5%); }
-//     50% { transform: translate(5%); }
-//     75% { transform: translate(7.5%); }
-//     100% { transform: translate(10%); }
-// }
-
-// //////////////////////////////////////////////////////////////
-// //Keyframe bottomandin
-
-// @-webkit-keyframes bottomandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(0%, -2.5%); }
-//     50% { transform: translate(0%, -5%); }
-//     75% { transform: translate(0%, -7.5%); }
-//     100% { transform: translate(0%, -10%); }
-// }
-
-// @keyframes bottomandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(0%, -2.5%); }
-//     50% { transform: translate(0%, -5%); }
-//     75% { transform: translate(0%, -7.5%); }
-//     100% { transform: translate(0%, -10%); }
-// }
-
-// /////////////////////////////////////////////////////////////////
-// //Keyframe topandin
-
-// @-webkit-keyframes topandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(0%, 2.5%); }
-//     50% { transform: translate(0%, 5%); }
-//     75% { transform: translate(0%, 7.5%); }
-//     100% { transform: translate(0%, 10%); }
-// }
-
-// @keyframes topandin {
-//     0% { transform: translate(0%); }
-//     25% { transform: translate(0%, 2.5%); }
-//     50% { transform: translate(0%, 5%); }
-//     75% { transform: translate(0%, 7.5%); }
-//     100% { transform: translate(0%, 10%); }
-// }
+@-webkit-keyframes rightandin{
+    0% { transform: translate(0%); }
+    25% { transform: translate(2.5%); }
+    50% { transform: translate(5%); }
+    75% { transform: translate(7.5%); }
+    100% { transform: translate(10%); }
+}
 
 
-// #Ellipse_55 {
-//     -webkit-animation: leftandin 0.8s linear infinite alternate;
-//     animation: leftandin 0.8s linear infinite alternate;
-// }
+@keyframes rightandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(2.5%); }
+    50% { transform: translate(5%); }
+    75% { transform: translate(7.5%); }
+    100% { transform: translate(10%); }
+}
 
-// #Ellipse_55-2 {
+//////////////////////////////////////////////////////////////
+//Keyframe bottomandin
 
-//     -webkit-animation:  bottomandin 0.8s linear infinite alternate;
-//     animation:  bottomandin 0.8s linear infinite alternate;
-// }
+@-webkit-keyframes bottomandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, -2.5%); }
+    50% { transform: translate(0%, -5%); }
+    75% { transform: translate(0%, -7.5%); }
+    100% { transform: translate(0%, -10%); }
+}
 
-// #Ellipse_55-3{
-//     -webkit-animation: topandin 0.8s linear infinite alternate;
-//     animation: topandin 0.8s linear infinite alternate;
-// }
+@keyframes bottomandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, -2.5%); }
+    50% { transform: translate(0%, -5%); }
+    75% { transform: translate(0%, -7.5%); }
+    100% { transform: translate(0%, -10%); }
+}
 
-// #Ellipse_55-4 {
+/////////////////////////////////////////////////////////////////
+//Keyframe topandin
 
-//     -webkit-animation: rightandin 0.8s linear infinite alternate;
-//     animation: rightandin 0.8s linear infinite alternate;
-// }
+@-webkit-keyframes topandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, 2.5%); }
+    50% { transform: translate(0%, 5%); }
+    75% { transform: translate(0%, 7.5%); }
+    100% { transform: translate(0%, 10%); }
+}
+
+@keyframes topandin {
+    0% { transform: translate(0%); }
+    25% { transform: translate(0%, 2.5%); }
+    50% { transform: translate(0%, 5%); }
+    75% { transform: translate(0%, 7.5%); }
+    100% { transform: translate(0%, 10%); }
+}
+
+
+#Ellipse_555 {
+    -webkit-animation: leftandin 0.8s linear infinite alternate;
+    animation: leftandin 0.8s linear infinite alternate;
+    fill: white !important;
+}
+
+#Ellipse_555-2 {
+
+    -webkit-animation:  bottomandin 0.8s linear infinite alternate;
+    animation:  bottomandin 0.8s linear infinite alternate;
+    fill: white !important;
+}
+
+#Ellipse_555-3{
+    -webkit-animation: topandin 0.8s linear infinite alternate;
+    animation: topandin 0.8s linear infinite alternate;
+    fill: white !important;
+}
+
+#Ellipse_555-4 {
+
+    -webkit-animation: rightandin 0.8s linear infinite alternate;
+    animation: rightandin 0.8s linear infinite alternate;
+    fill: white !important;
+}
