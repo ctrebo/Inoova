@@ -15,7 +15,9 @@
 //Style for the whole "Ebene" with all the circles and the logo
 #Ebene_1-2 {
     transform-origin: center;
-    animation: rotate 0.8s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation: rotate .8s cubic-bezier(1, 0.95, 1, 0.79);
+    animation: rotate .8s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -23,6 +25,16 @@
 ///////////////////////////////////////////////////////
 
 //Rotate the whole svg <g id = "Ebene_1-2">
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% { 
+        transform: rotate(62deg);
+
+    } 
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -35,6 +47,23 @@
 
 //Keyframes that translate the circles + change their opacity
 //For every circle their is one Keyframe due to different direction
+@-webkit-keyframes topright {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    80%{
+        transform: translate(3.5%, -3.5%);
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        fill: #fff;
+        transform: translate(0%, -15%);
+        opacity:0;
+    }
+}
+
 @keyframes topright {
     0% {
         transform: translate(0%, 0%);
@@ -52,6 +81,25 @@
     }
 }
 
+//////////////////////////////////////
+@-webkit-keyframes topleft {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    80%{
+        transform: translate(-3.5%, -3.5%);
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        fill: #fff;
+        transform: translate(-15%, 0%);
+        opacity:0;
+    }
+}
+
+
 @keyframes topleft {
     0% {
         transform: translate(0%, 0%);
@@ -66,6 +114,26 @@
         fill: #fff;
         transform: translate(-15%, 0%);
         opacity:0;
+    }
+}
+
+//////////////////////////////////////
+
+@-webkit-keyframes bottomright {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    80%{
+        transform: translate(3.5%, 3.5%);
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        fill: #fff;
+        transform: translate(15%, 0%);
+        opacity:0;
+        
     }
 }
 
@@ -87,6 +155,25 @@
     }
 }
 
+//////////////////////////////////////
+@-webkit-keyframes bottomleft {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    80%{
+        transform: translate(-3.5%, 3.5%);
+    }
+    99% {
+        opacity: 0.2;
+    }
+    100% {
+        fill: #fff;
+        transform: translate(0%,15%);
+        opacity: 0;
+    }
+}
+
+
 @keyframes bottomleft {
     0% {
         transform: translate(0%, 0%);
@@ -104,8 +191,23 @@
     }
 }
 
+///////////////////////////////////////////
+
 //Keyframe that changes the opacity of the logo
 //from 0 to 1 when the circles are in the middle
+@-webkit-keyframes opacityforlogo {
+    0% {
+        opacity: 0;
+    }
+    99%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 @keyframes opacityforlogo {
     0% {
         opacity: 0;
@@ -126,26 +228,36 @@
 #Gruppe_411 {
     transform: rotate(-62deg);
     transform-origin: center;
+    -webkit-animation: opacityforlogo 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: opacityforlogo 1s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55 {
+    -webkit-animation: bottomright 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: bottomright 1s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-2 {
+    -webkit-animation: bottomleft 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: bottomleft 1s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-3 {
+    -webkit-animation: topright 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: topright 1s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-4 {
+    -webkit-animation: topleft 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: topleft 1s cubic-bezier(1, 0.95, 1, 0.79);
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
