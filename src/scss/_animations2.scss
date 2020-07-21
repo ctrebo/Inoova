@@ -4,14 +4,18 @@
     width: 1000px;
     height: 1000px;
     top: 0%;
-    left:30%;
-    border: none;
+    left:50%;
+    background: none;
+}
+
+.cls-2 {
+    stroke: none !important;
 }
 
 //Style for the whole "Ebene" with all the circles and the logo
 #Ebene_1-2 {
     transform-origin: center;
-    animation: rotate 0.75s linear; 
+    animation: rotate 0.8s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
 }
 
@@ -35,14 +39,14 @@
     0% {
         transform: translate(0%, 0%);
     }
-    75%{
+    80%{
         transform: translate(3.5%, -3.5%);
-        opacity: 0.2;
     }
     99% {
         opacity: 0.2;
     }
     100% {
+        fill: #fff;
         transform: translate(0%, -15%);
         opacity:0;
     }
@@ -52,14 +56,14 @@
     0% {
         transform: translate(0%, 0%);
     }
-    75%{
+    80%{
         transform: translate(-3.5%, -3.5%);
-        opacity: 0.2;
     }
     99% {
         opacity: 0.2;
     }
     100% {
+        fill: #fff;
         transform: translate(-15%, 0%);
         opacity:0;
     }
@@ -69,14 +73,14 @@
     0% {
         transform: translate(0%, 0%);
     }
-    75%{
+    80%{
         transform: translate(3.5%, 3.5%);
-        opacity: 0.2;
     }
     99% {
         opacity: 0.2;
     }
     100% {
+        fill: #fff;
         transform: translate(15%, 0%);
         opacity:0;
         
@@ -87,14 +91,14 @@
     0% {
         transform: translate(0%, 0%);
     }
-    75%{
+    80%{
         transform: translate(-3.5%, 3.5%);
-        opacity: 0.2;
     }
     99% {
         opacity: 0.2;
     }
     100% {
+        fill: #fff;
         transform: translate(0%,15%);
         opacity: 0;
     }
@@ -122,27 +126,26 @@
 #Gruppe_411 {
     transform: rotate(-62deg);
     transform-origin: center;
-    animation: opacityforlogo 1s linear;
+    animation: opacityforlogo 1s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55 {
-    animation: bottomright 1.0s linear;
+    animation: bottomright 1s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-2 {
-    animation: bottomleft 1.0s linear;
+    animation: bottomleft 1s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-3 {
-    animation: topright 1.0s linear;
+    animation: topright 1s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
 }
 
 #Ellipse_55-4 {
-    animation: topleft 1.0s linear;
+    animation: topleft 1s cubic-bezier(1, 0.95, 1, 0.79);
     animation-fill-mode: forwards;
-
 }
