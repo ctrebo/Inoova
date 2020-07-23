@@ -67,10 +67,11 @@ var myVar;
 
 
 
-var x=window.scrollX;
-var y=window.scrollY;
 
-    $( document ).ready(function() {
+
+$( document ).ready(function() {
+    var x=window.scrollX;
+    var y=window.scrollY;
     window.onscroll=function(){
         if (y == 0) {
             window.scrollTo(x, y);

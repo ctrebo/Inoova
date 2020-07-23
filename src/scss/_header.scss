@@ -1,8 +1,6 @@
 //Style for the page headers
 
 .page-header {
-
-
     height: 100vh;
     width: 100vw;
 
@@ -18,10 +16,12 @@
 
 }
 
+#slogan {
+    font-size: 3.75rem;
+}
 
 .heading-group {
     color: white;
-    text-align: center;
     margin: 15rem auto auto auto;
 }
 
@@ -43,7 +43,7 @@
         width: 100vw;
     }
     #slogan {
-        font-size: 3rem;
+        font-size: 3.3333;
     }
     
 }

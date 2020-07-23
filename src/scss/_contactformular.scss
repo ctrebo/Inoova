@@ -1,21 +1,17 @@
 .heading-group2{
     height: auto;
     color: white;
-    margin: auto;
-    text-align: left;
 }
 
 .formfields {
-    margin: auto;
 }
 
 .kontakt {
-    width: 100vw;
-    height: 80vh;
     background: -webkit-linear-gradient(0deg, #712FEB,  #88D1FF);
     background: -moz-linear-gradient(0deg, #712FEB,  #88D1FF);
     background: linear-gradient(90deg, #712FEB,  #88D1FF);
 
+    width: 100vw;
 }
 
 
@@ -34,11 +30,8 @@
 @media screen and (max-width: 768px) {
     
     .heading-group2 {
-        text-align: justify;
         margin: 0rem 1rem;
         width: 90%;
-        text-align:justify;
-        word-spacing:-2px;
     }
 
     .formfields {
