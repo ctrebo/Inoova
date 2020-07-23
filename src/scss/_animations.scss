@@ -1,4 +1,6 @@
 #svg1 {
+    visibility: hidden;
+
     position: absolute;
     width: 400px;
     height: 400px;
@@ -8,6 +10,11 @@
 
 }
 
+#rect {
+    stroke: none !important;
+}
+
+//Keyframes make circles move in and out
 ///////////////////////////////////////////////
 //Keyframe leftandin
 
@@ -87,7 +94,7 @@
 }
 
 
-#Ellipse_555 {
+.Ellipse_1 {
     -webkit-animation: leftandin 0.8s linear infinite alternate;
     animation: leftandin 0.8s linear infinite alternate;
     fill: white !important;

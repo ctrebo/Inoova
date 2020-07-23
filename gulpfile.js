@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const merge = require("merge-stream");
 const uglify = require("gulp-uglifycss");
 const rename = require("gulp-rename");
+const minify = require("gulp-minify");
 
 //compile scss into css
 function style() {
@@ -13,7 +14,20 @@ function style() {
     .pipe(browserSync.stream());
 }
 
-//returns the styles.css file, uglifies it, rename it do .min.css and save it.
+function minifyjs() {
+    return gulp.src('src/js/**/*.js')
+    .pipe(minify({
+        ext: {
+            min: '.min.js'
+        },
+        ignoreFiles: ['-min.js']
+    }))
+      .pipe(gulp.dest('public/js'))
+      .pipe(browserSync.stream());
+  };
+
+
+//returns the styles.css file, uglifies it, rename it to .min.css and save it.
 function stylecss() {
     return gulp.src('public/css/styles.css')
     //.pipe(sass().on('error',sass.logError))
@@ -57,6 +71,7 @@ function watch() {
         }
     });
     gulp.watch('src/scss/**/*.scss', style);
+    gulp.watch('src/js/**/*.js', minifyjs);
     gulp.watch('public/css/styles.css', stylecss);
     gulp.watch('./*.html').on('change',browserSync.reload);
     gulp.watch('./js/**/*.js').on('change', browserSync.reload);
@@ -68,3 +83,4 @@ exports.style = style;
 exports.watch = watch;
 exports.movefiles = movefiles;
 exports.stylecss = stylecss;
+exports.minifyjs = minifyjs;

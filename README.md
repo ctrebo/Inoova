@@ -4,6 +4,9 @@
 ### run style function once
     gulp style
 
+### run minifyjs function once
+    gulp style
+
 ### run gulp stylecss
     gulp stylecss
 

@@ -1,11 +1,14 @@
 //Basis style for the whole svg
 #svg2 {
+    visibility: hidden;
+
     position: absolute;
-    width: 1000px;
-    height: 1000px;
-    top: 0%;
-    left:50%;
-    background: none;
+    width: 500px;
+    height: 500px;
+    top: -10%;
+    left: 32.5%;
+    
+    
 }
 
 .cls-2 {
@@ -13,7 +16,7 @@
 }
 
 //Style for the whole "Ebene" with all the circles and the logo
-#Ebene_1-2 {
+.rotateall {
     transform-origin: center;
     -webkit-animation: rotate .8s cubic-bezier(1, 0.95, 1, 0.79);
     animation: rotate .8s cubic-bezier(1, 0.95, 1, 0.79);
@@ -130,7 +133,6 @@
         opacity: 0.2;
     }
     100% {
-        fill: #fff;
         transform: translate(15%, 0%);
         opacity:0;
         
@@ -148,7 +150,6 @@
         opacity: 0.2;
     }
     100% {
-        fill: #fff;
         transform: translate(15%, 0%);
         opacity:0;
         
@@ -167,7 +168,7 @@
         opacity: 0.2;
     }
     100% {
-        fill: #fff;
+        
         transform: translate(0%,15%);
         opacity: 0;
     }
@@ -185,7 +186,7 @@
         opacity: 0.2;
     }
     100% {
-        fill: #fff;
+        
         transform: translate(0%,15%);
         opacity: 0;
     }
@@ -224,8 +225,7 @@
 //SCSS Code of circles and logo
 // Circles are holding Keyframes for animation 
 //////////////////////////////////////////////////////
-
-#Gruppe_411 {
+.animationlogo {
     transform: rotate(-62deg);
     transform-origin: center;
     -webkit-animation: opacityforlogo 1s cubic-bezier(1, 0.95, 1, 0.79);;
@@ -234,28 +234,32 @@
     animation-fill-mode: forwards;
 }
 
-#Ellipse_55 {
+.Ellipse_1  {
+    fill: #fff;
     -webkit-animation: bottomright 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: bottomright 1s cubic-bezier(1, 0.95, 1, 0.79);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-#Ellipse_55-2 {
+.Ellipse_2 {
+    fill: #fff;
     -webkit-animation: bottomleft 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: bottomleft 1s cubic-bezier(1, 0.95, 1, 0.79);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-#Ellipse_55-3 {
+.Ellipse_3 {
+    fill: #fff;
     -webkit-animation: topright 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: topright 1s cubic-bezier(1, 0.95, 1, 0.79);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
-#Ellipse_55-4 {
+.Ellipse_4{
+    fill: #fff;
     -webkit-animation: topleft 1s cubic-bezier(1, 0.95, 1, 0.79);;
     animation: topleft 1s cubic-bezier(1, 0.95, 1, 0.79);
     -webkit-animation-fill-mode: forwards;

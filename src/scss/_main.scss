@@ -1,8 +1,8 @@
 
 .section {
-    text-align: justify;
+    text-align: left;
     margin:0 auto;
-    width: 50%;
+    width: 100%;
 }
 
 .projects, .clients {
@@ -11,12 +11,11 @@
 }
 
 .team {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 25vw;
     background-color: #0000004D;
     position: relative;
 }
-
 
 
 .image-holder {
@@ -47,15 +46,64 @@
     color: #000;
 }
 
-#pic-1 {
+// #pic-1 {
+//     position: absolute;
+//     height: 45vh;
+//     width: auto;
+//     bottom: 0%;
+// }
+
+// #pic-2 {
+//     position: absolute;
+//     height: 45vh;
+//     width: auto;
+//     bottom: 0%;
+// }
+
+// #pic-3 {
+//     position: absolute;
+//     height: 45vh;
+//     width: auto;
+//     bottom: 0%;
+// }
+
+// #pic-4 {
+//     position: absolute;
+//     height: 45vh;
+//     width: auto;
+//     bottom: 0%;
+// }
+
+//zählt von 1 bis 4
+@for $zahl from 0 through 4 {
+    $percentage: unquote("%");
+    #pic-#{$zahl + 1} {
+        position: absolute;
+        height: 25vw;
+        width: 25vw;
+        @if $zahl + 1 == 4 {
+            width: 34vw;
+        }
+        bottom: 0%;
+        @if $zahl + 1 == 3 or $zahl + 1 == 5 {
+            bottom: -3.3%;
+        }
+        left: #{$zahl * 25 - 0.3}$percentage ;
+        @if $zahl + 1 > 1 {
+            left: #{$zahl * 25 - 5.3 * $zahl + 3}$percentage;
+        }
+    }
 }
 
-#pic-2 {
-}
+//////////////////////////////
+//Media queries
 
-#pic-3 {
-}
-
-#pic-4 {
-
+@media screen and (max-width: 768px) {
+    
+    .section {
+        margin: 0rem 1rem;
+        width: 90%;
+        text-align:left;
+        word-spacing:-2px;
+    }
 }

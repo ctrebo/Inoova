@@ -10,6 +10,7 @@
     position: relative;
     z-index: 100;
     background-image: url('../../img/HamburgerMenu.svg');
+
 }
 
 
@@ -25,6 +26,7 @@
     background: -moz-linear-gradient(0deg, #712FEB, #88D1FF );
     background: linear-gradient(90deg, #712FEB,  #88D1FF );
 
+    filter: brightness(0.9);
 
     
     // opacity : 94%;
@@ -33,17 +35,49 @@
 }
 
 
-//Navbar menu design
+@keyframes pushout{
+    from {
+        width: 0%;
+    }
+    to {
+        width:30%;
+    }
+}
+
+@keyframes pushin{
+    from {
+        width: 30%;
+    }
+    to {
+        width:0%;
+    }
+}
+
+// Navbar menu design
 .menu {
     background-color: black;
     width: 30%;
     height: 100vh;
     position: fixed;
     top: 0%;
-    left: 75%;
-    border-radius: 50px;
+    right: 0%;
+    border-radius: 50px 0px 0px 50px !important;
     z-index: -1;
+
+    $count: 1;
+
+    @if $count % 2 != 0 {
+        animation: pushout 1.5s ease-in;
+        animation-fill-mode: forwards;
+        $count: $count + 1;
+    } @else {
+        animation: pushin 1.5s ease-in;
+        animation-fill-mode: forwards;
+        $count: $count + 1;
+    }
 }
+
+
 
 
 // Navbar menu unordered list design
@@ -53,7 +87,7 @@ ul {
     li {
         a {
             text-decoration: none;
-            color: black;
+            color: white;
 
             &:hover {
                 color: black;
@@ -61,3 +95,42 @@ ul {
         }
     }
 }
+
+
+
+
+
+/////////////////////////////////////////
+//Media Queries
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 4rem;
+        height: auto;
+        margin-left: -3.5rem;
+    } 
+
+    .navbar .navbar-toggler-icon {
+        padding-left: 3rem;
+        position: relative;
+        z-index: 100;
+        background-image: url('../../img/HamburgerMenu.svg');
+        background-size: 30px 30px;
+    }
+}
+
+// @media screen and (max-width: 370px) {
+//     .logo {
+//         width: 4rem;
+//         height: auto;
+//         margin-left: -3.5rem;
+//     } 
+
+//     .navbar .navbar-toggler-icon {
+//         padding-left: 4rem;
+//         position: relative;
+//         z-index: 100;
+//         background-image: url('../../img/HamburgerMenu.svg');
+//         background-size: 30px 30px;
+//     }
+// }

@@ -1,8 +1,14 @@
+//Style for the page headers
+
 .page-header {
-    width: 100vw;
+
+
     height: 100vh;
+    width: 100vw;
+
     display: flex;
-    
+
+    position: relative;
 
     background: -webkit-linear-gradient(0deg, #712FEB,  #88D1FF);
     background: -moz-linear-gradient(0deg, #712FEB,  #88D1FF);
@@ -16,5 +22,28 @@
 .heading-group {
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 15rem auto auto auto;
+}
+
+/////////////////////////////////////////////
+//media queries
+
+@media screen and (max-width: 768px) {
+
+    .page-header {
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .page-header {
+        height: 100vh;
+        width: 100vw;
+    }
+    #slogan {
+        font-size: 3rem;
+    }
+    
 }
