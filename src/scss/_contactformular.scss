@@ -1,0 +1,50 @@
+.heading-group2{
+    width: 40%;
+    height: auto;
+    color: white;
+    margin: auto;
+    text-align: justify;
+}
+
+.formfields {
+    width: 40%;
+    margin: auto;
+}
+
+.kontakt {
+    width: 100vw;
+    height: 80vh;
+    background: -webkit-linear-gradient(0deg, #712FEB,  #88D1FF);
+    background: -moz-linear-gradient(0deg, #712FEB,  #88D1FF);
+    background: linear-gradient(90deg, #712FEB,  #88D1FF);
+
+}
+
+
+.form-control {
+    border-radius: 0.6rem;
+}
+
+#textarea {
+    resize: none;
+}
+
+
+/////////////////////////////////////////////////
+//Meida queries
+
+@media screen and (max-width: 768px) {
+    
+    .heading-group2 {
+        text-align: justify;
+        margin: 0rem 1rem;
+        width: 90%;
+        text-align:justify;
+        word-spacing:-2px;
+    }
+
+    .formfields {
+        width: 90%;
+        margin: auto;
+    }
+}
