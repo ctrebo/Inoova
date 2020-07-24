@@ -33,6 +33,10 @@
     .page-header {
         height: 100vh;
         width: 100vw;
+
+        background: -webkit-linear-gradient(90deg, #88D1FF,  #712FEB);
+        background: -moz-linear-gradient(90deg, #88D1FF,  #712FEB);
+        background: linear-gradient(0deg, #88D1FF,  #712FEB);
     }
 }
 
